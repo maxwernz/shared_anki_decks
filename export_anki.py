@@ -26,13 +26,13 @@ def export_deck(deck_name):
         if response_data:
             print(f"Exported deck {deck_name} successfully.")
         else:
-            print(f"Failed to import deck")
+            print(f"Failed to export deck")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-if __name__ == "__main__:":
-    args = sys.argv
-
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    print(args)
     git_pull()
     for arg in args:
         export_deck(arg)
