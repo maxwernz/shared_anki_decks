@@ -6,17 +6,21 @@
 4. 'anki.py' ausführen
 5. eventuell `pip install requests` und `pip install GitPython` machen, wenn die nicht installiert sind
 
-**Falls bei euch die Python Files änderungen haben, z.B. durch das ändern des Shebangs, nicht committen, lasst die einfach unstaged**
+**Falls bei euch die Python Files änderungen haben, z.B. durch das ändern des Shebangs, nicht committen, lasst die einfach unstaged. Solange ihr aber nicht selber committet, sondern nur die Skripte benutzt passiert auch nichts**
    
 
 ## Import
 **Anki muss geöffnet sein**
+
+
 Alle Decks müssen flach auf der selben Ebene wie das Skript liegen. 
 Beim Ausführen des Skripts wird automatisch vom repo gepullt und alle Decks in Anki geladen. 
 Dadurch bleibt einem das pullen erspart und man kann zum Aktualisieren einfach immer das Skript ausführen.
 
 ## Export
 **Anki muss geöffnet sein**
+
+
 Zum Exportieren von Decks einfach das Export Skript `export_anki.py` ausführen.
 Dabei per Kommandozeile den oder die Namen der Decks übergeben( z.B. ./export_anki.py BME).
 Das wird dann automatisch in den Ordner exportiert, committet und gepusht.
