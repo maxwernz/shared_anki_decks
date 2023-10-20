@@ -1,4 +1,4 @@
-#!/usr/local/bin/python1
+#!/usr/local/bin/python3
 import requests
 import os
 import sys
