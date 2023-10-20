@@ -1,11 +1,8 @@
 #!/usr/local/bin/python3
 import requests
-import git
 import os
+from git_util import git_pull
 
-def git_pull():
-    g = git.cmd.Git(os.getcwd())
-    g.pull()
 
 # Anki Connect API URL
 anki_connect_url = "http://localhost:8765"
@@ -21,7 +18,6 @@ def import_anki_deck(deck_path):
 
     try:
         response = requests.post(anki_connect_url, json=data)
-        print(response.json())
         response_data = response.json()
 
         if response_data:
