@@ -37,5 +37,5 @@ if __name__ == "__main__":
     for arg in args:
         export_deck(arg)
 
-    apkg_files = [file for file in os.listdir(os.getcwd()) if file.endswith(".apkg")]
+    apkg_files = [file for file in os.listdir(os.getcwd()) if file.endswith(".apkg") and file.strip(".apkg") in args]
     git_push(apkg_files)
